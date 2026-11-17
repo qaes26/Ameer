@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#060e1d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>مبادرة حكاية الشمال | برئاسة عامر الخوالدة</title>
+    <meta name="description" content="مبادرة شبابية سياحية تهدف لإبراز جمال وتراث شمال الأردن وتمكين الشباب، برؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني.">
+    
+    <!-- Google Fonts (Alexandria & Amiri) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Watermark Background Overlay -->
+    <div class="watermark-backdrop" aria-hidden="true"></div>
+
+    <!-- Mobile Nav Backdrop Overlay -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-emblem">
+                    <img src="54049.jpg" alt="شعار مبادرة حكاية الشمال">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">حكاية الشمال</span>
+                    <span class="brand-subtitle">مبادرة شبابية سياحية</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <div class="mobile-drawer-header">
+                    <div class="drawer-brand">
+                        <img src="54049.jpg" alt="حكاية الشمال">
+                        <span>حكاية الشمال</span>
+                    </div>
+                    <button class="drawer-close" id="drawerClose" aria-label="إغلاق القائمة">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <a href="#hero" class="nav-item active"><i class="fa-solid fa-house mobile-nav-icon"></i> الرئيسية</a>
+                <a href="#about" class="nav-item"><i class="fa-solid fa-circle-info mobile-nav-icon"></i> عن المبادرة</a>
+                <a href="#crown-prince" class="nav-item"><i class="fa-solid fa-crown mobile-nav-icon"></i> رؤية ولي العهد</a>
+                <a href="#pillars" class="nav-item"><i class="fa-solid fa-cubes mobile-nav-icon"></i> ركائزنا</a>
+                <a href="#landmarks" class="nav-item"><i class="fa-solid fa-map-location-dot mobile-nav-icon"></i> معالم الشمال</a>
+                <a href="#president" class="nav-item"><i class="fa-solid fa-user-tie mobile-nav-icon"></i> كلمة الرئيس</a>
+                <a href="#youth-role" class="nav-item"><i class="fa-solid fa-hands-holding-circle mobile-nav-icon"></i> العمل الشبابي والأثر</a>
+                <a href="#youth-role" class="btn btn-gold nav-cta"><i class="fa-solid fa-users-viewfinder"></i> آفاق المبادرة</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-watermark" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="royal-badge">
+                        <span class="crown-icon">👑</span>
+                        <span>برؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        حكاية الشمال... <br>
+                        <span class="gold-text">حكايتنا، وهويتنا، ومستقبلنا</span>
+                    </h1>
+
+                    <p class="hero-tagline">
+                        «نروي لكم حكاية... ونصنع معاً تجربة لا تُنسى»
+                    </p>
+
+                    <p class="hero-description">
+                        مبادرة شبابية سياحية تنطلق على مستوى شمال الأردن، تهدف لإبراز جمال الشمال وتراثه العريق وهويته الأصيلة، والتعريف بكنوزه السياحية والتاريخية والثقافية، وإعطاء الشباب فرصة حقيقية للمشاركة في تطوير السياحة وخدمة المجتمع.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#youth-role" class="btn btn-gold">
+                            <i class="fa-solid fa-lightbulb"></i> دور الشباب وأثر المبادرة
+                        </a>
+                        <a href="#about" class="btn btn-outline">
+                            <i class="fa-solid fa-compass"></i> استكشف المبادرة
+                        </a>
+                        <button class="btn btn-glass view-poster-btn" id="openPosterModal">
+                            <i class="fa-regular fa-image"></i> عرض الشعار الرسمي
+                        </button>
+                    </div>
+
+                    <div class="hero-badges-strip">
+                        <div class="mini-badge">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>على مستوى الشمال الأردني</span>
+                        </div>
+                        <div class="mini-badge">
+                            <i class="fa-solid fa-users"></i>
+                            <span>بقيادة وسواعد شبابية</span>
+                        </div>
+                        <div class="mini-badge">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                            <span>إحياء التراث والهوية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="poster-card-wrapper">
+                        <div class="glow-effect"></div>
+                        <div class="poster-card">
+                            <img src="54049.jpg" alt="بوستر وشعار مبادرة حكاية الشمال" class="featured-poster">
+                            <div class="poster-overlay">
+                                <span class="tag-location"><i class="fa-solid fa-location-dot"></i> على مستوى الشمال</span>
+                                <p class="overlay-quote">معاً .. نُحيي روح الشمال</p>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-top">
+                            <i class="fa-solid fa-flag text-gold"></i>
+                            <div>
+                                <strong>تراث وهوية</strong>
+                                <span>أصالة أردنية ممتدة</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fa-solid fa-seedling text-gold"></i>
+                            <div>
+                                <strong>طاقات شبابية</strong>
+                                <span>تمكين وصناعة أثر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Quick Highlights -->
+        <section class="stats-strip">
+            <div class="container stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">محافظات شمالية نابضة بالحياة</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-landmark"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number">+60</span>
+                        <span class="stat-label">موقعاً أثرياً وطبيعياً مستهدفاً</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">روح تشاركية ومجتمعية شبابية</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-number">أثر دائم</span>
+                        <span class="stat-label">تنمية سياحية ومجتمعية مستدامة</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">من نحن</span>
+                    <h2 class="section-title">نبض الشباب وسحر الشمال</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-lead">
+                        مبادرة «حكاية الشمال» ولدت من إيمان عميق بأن شمال الأردن يختزن كنوزاً تاريخية وطبيعية وإنسانية تستحق أن تُروى للعالم بلسان الشباب وسواعدهم.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-vision">
+                        <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h3>رؤيتنا</h3>
+                        <p>
+                            أن تكون مبادرة «حكاية الشمال» منصة رائدة في تسليط الضوء على المقومات السياحية والثقافية لشمال الأردن، ومرجعاً شبابياً موثوقاً في تقديم التجارب السياحية الغنية التي تعكس كرم وضيافة وهوية الأردن الأصيلة.
+                        </p>
+                    </div>
+
+                    <div class="about-card main-mission">
+                        <div class="card-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                        <h3>رسالتنا</h3>
+                        <p>
+                            إبراز التراث والهوية السياحية عبر مسارات استكشافية، وإنتاج محتوى رقمي وثائقي عصري، وتأهيل الشباب ليكونوا سفراء لوطنهم وقادة في تطوير قطاع السياحة وخدمة مجتمعاتهم المحلية.
+                        </p>
+                    </div>
+
+                    <div class="about-card main-goals">
+                        <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3>قيمنا</h3>
+                        <ul class="values-list">
+                            <li><i class="fa-solid fa-check text-gold"></i> <strong>الأصالة:</strong> الاعتزاز بهويتنا وتاريخنا الأردني.</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> <strong>التمكين:</strong> فتح آفاق الإبداع والمشاركة للشباب.</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> <strong>الأثر:</strong> خلق نفع ملموس ومستدام للمجتمعات المحلية.</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> <strong>الشغف:</strong> حب الأرض وتقديم حكايتها بأبهى حلة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crown Prince Vision Section -->
+        <section class="section crown-prince-section" id="crown-prince">
+            <div class="container">
+                <div class="royal-wrapper">
+                    <div class="royal-content">
+                        <div class="royal-tag">
+                            <i class="fa-solid fa-crown text-gold"></i>
+                            <span>انسجاماً مع التوجيهات الملكية السامية</span>
+                        </div>
+                        <h2 class="royal-title">رؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني</h2>
+                        <div class="gold-line"></div>
+                        <blockquote class="royal-quote">
+                            «الشباب هم عماد الوطن ومحرك التنمية، وبهمتهم وأفكارهم نصنع الفارق ونبني مستقبل الأردن المشرق.»
+                        </blockquote>
+                        <p class="royal-text">
+                            تستمد مبادرة «حكاية الشمال» إلهامها وعزمها من رؤية سمو الأمير الحسين بن عبدالله الثاني، ولي العهد المعظم، في إيلاء الشباب الأردني الأولوية القصوى، وتشجيعهم على أخذ زمام المبادرة والابتكار في خدمة قطاعات التنمية المستدامة، وفي مقدمتها السياحة الوطنية والحفاظ على الإرث الثقافي.
+                        </p>
+                        <div class="royal-pillars">
+                            <div class="royal-pillar-item">
+                                <i class="fa-solid fa-rocket text-gold"></i>
+                                <span>تمكين الشباب الريادي</span>
+                            </div>
+                            <div class="royal-pillar-item">
+                                <i class="fa-solid fa-tree text-gold"></i>
+                                <span>تنمية السياحة البيئية والمستدامة</span>
+                            </div>
+                            <div class="royal-pillar-item">
+                                <i class="fa-solid fa-hands-holding-circle text-gold"></i>
+                                <span>تعزيز العمل التطوعي وخدمة المجتمع</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="royal-emblem-box">
+                        <div class="emblem-circle">
+                            <img src="54049.jpg" alt="رمزية الهوية الشمالية">
+                            <div class="circle-ring"></div>
+                        </div>
+                        <p class="emblem-caption">حكايتنا، وهويتنا، ومستقبلنا</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars Section (From the Logo: اكتشف معالمنا | مجتمعنا يجمعنا | نعزز تميزنا) -->
+        <section class="section pillars-section" id="pillars">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">مرتكزات المبادرة الثلاثة</span>
+                    <h2 class="section-title">ركائز نصنع بها الفارق</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-lead">
+                        تنطلق أعمالنا ومشاريعنا الميدانية من ثلاثة أركان أساسية تجسد روح البوستر الرسمي للمبادرة:
+                    </p>
+                </div>
+
+                <div class="pillars-grid">
+                    <!-- Pillar 1 -->
+                    <div class="pillar-card">
+                        <div class="pillar-number">01</div>
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h3 class="pillar-name">اكتشف معالمنا</h3>
+                        <p class="pillar-desc">
+                            تسليط الضوء على المواقع الأثرية، التاريخية، والغابات الطبيعية الخلابة في إربد، جرش، عجلون، والمفرق، وتصميم مسارات سياحية نوعية تُثري زيارة السائح المحلي والدولي.
+                        </p>
+                        <ul class="pillar-points">
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> توثيق المعالم غير المكتشفة</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> إنتاج أدلة ومسارات رقمية ميسرة</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> إبراز التنوع البيئي والجغرافي للشمال</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="pillar-card highlighted">
+                        <div class="pillar-badge">جوهر رسالتنا</div>
+                        <div class="pillar-number">02</div>
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="pillar-name">مجتمعنا يجمعنا</h3>
+                        <p class="pillar-desc">
+                            بناء جسور الشراكة مع المجتمعات المحلية، ودعم المشاريع الريفية والحرف اليدوية، وجعل المجتمع المحلي شريكاً مستفيداً من كل حراك سياحي وثقافي.
+                        </p>
+                        <ul class="pillar-points">
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> دعم أصحاب الحرف والمنتجات البلدية</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> تنظيم فعاليات وأسواق تراثية مجتمعية</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> تعزيز ثقافة الضيافة الأردنية الأصيلة</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="pillar-card">
+                        <div class="pillar-number">03</div>
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h3 class="pillar-name">نعزز تميزنا</h3>
+                        <p class="pillar-desc">
+                            تدريب وتأهيل الطاقات الشبابية في مجالات الإرشاد السياحي، صناعة المحتوى الإبداعي، وإدارة الفعاليات ليكونوا رواداً متميزين يحملون اسم الأردن عالياً.
+                        </p>
+                        <ul class="pillar-points">
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> ورش تدريبية في السرد القصصي والتصوير</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> صقل مهارات القيادة والعمل الجماعي</li>
+                            <li><i class="fa-solid fa-arrow-left text-gold"></i> إطلاق منصة رقمية لإبداعات الشباب</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Northern Governorates & Landmarks Section -->
+        <section class="section landmarks-section" id="landmarks">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">كنوز الشمال</span>
+                    <h2 class="section-title">محطات تروي عبق التاريخ وجمال الطبيعة</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-lead">
+                        استكشف محافظات شمال الأردن التي تشملها مبادرتنا، حيث يلتقي عمق التاريخ بروعة الطبيعة الخضراء:
+                    </p>
+                </div>
+
+                <!-- Governorate Filter Tabs -->
+                <div class="filter-tabs-wrapper">
+                    <div class="filter-tabs">
+                        <button class="tab-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> الكل</button>
+                        <button class="tab-btn" data-filter="jerash"><i class="fa-solid fa-columns"></i> جرش</button>
+                        <button class="tab-btn" data-filter="ajloun"><i class="fa-solid fa-chess-rook"></i> عجلون</button>
+                        <button class="tab-btn" data-filter="irbid"><i class="fa-solid fa-mountain-sun"></i> إربد</button>
+                        <button class="tab-btn" data-filter="mafraq"><i class="fa-solid fa-feather"></i> المفرق</button>
+                    </div>
+                </div>
+
+                <!-- Landmarks Grid -->
+                <div class="landmarks-grid" id="landmarksGrid">
+                    <!-- Jerash -->
+                    <div class="landmark-card" data-category="jerash">
+                        <div class="landmark-img-wrap">
+                            <div class="landmark-badge"><i class="fa-solid fa-columns"></i> جرش</div>
+                            <div class="landmark-visual bg-jerash">
+                                <i class="fa-solid fa-archway landmark-bg-icon"></i>
+                            </div>
+                        </div>
+                        <div class="landmark-info">
+                            <h4>مدينة الألف عمود (جراسا)</h4>
+                            <p>أحد أبهى وأكمل المدن الرومانية المحفوظة في العالم. الساحة البيضاوية، شارع الأعمدة، والمسرح الجنوبي حيث يعانق صدى التاريخ هتاف الزائرين.</p>
+                            <span class="landmark-highlight"><i class="fa-solid fa-star text-gold"></i> تجارب حكاية الشمال: مسارات إرشاد شبابية وعروض تراثية</span>
+                        </div>
+                    </div>
+
+                    <!-- Ajloun -->
+                    <div class="landmark-card" data-category="ajloun">
+                        <div class="landmark-img-wrap">
+                            <div class="landmark-badge"><i class="fa-solid fa-chess-rook"></i> عجلون</div>
+                            <div class="landmark-visual bg-ajloun">
+                                <i class="fa-solid fa-tree landmark-bg-icon"></i>
+                            </div>
+                        </div>
+                        <div class="landmark-info">
+                            <h4>قلعة عجلون وغابات السنديان</h4>
+                            <p>حصن صلاح الدين الأيوبي الشامخ على قمم الجبال، محاطاً بغابات عجلون ومحمياتها الطبيعية، وإطلالة ساحرة على جبال فلسطين ووادي الأردن.</p>
+                            <span class="landmark-highlight"><i class="fa-solid fa-star text-gold"></i> تجارب حكاية الشمال: مسارات الهايكنج والسياحة البيئية وتلفريك عجلون</span>
+                        </div>
+                    </div>
+
+                    <!-- Irbid / Umm Qais -->
+                    <div class="landmark-card" data-category="irbid">
+                        <div class="landmark-img-wrap">
+                            <div class="landmark-badge"><i class="fa-solid fa-compass"></i> إربد</div>
+                            <div class="landmark-visual bg-irbid">
+                                <i class="fa-solid fa-mountain-sun landmark-bg-icon"></i>
+                            </div>
+                        </div>
+                        <div class="landmark-info">
+                            <h4>أم قيس (جدارا) وعروس الشمال</h4>
+                            <p>حجارة البازلت الأسود المطلة على بحيرة طبريا وهضبة الجولان ونهر اليرموك، وسهول إربد الخضراء وقراها التراثية العريقة المليئة بحكايات الأجداد.</p>
+                            <span class="landmark-highlight"><i class="fa-solid fa-star text-gold"></i> تجارب حكاية الشمال: مسار الضيافة الريفية والبيوت التراثية</span>
+                        </div>
+                    </div>
+
+                    <!-- Mafraq / Umm Al-Jimal -->
+                    <div class="landmark-card" data-category="mafraq">
+                        <div class="landmark-img-wrap">
+                            <div class="landmark-badge"><i class="fa-solid fa-feather"></i> المفرق</div>
+                            <div class="landmark-visual bg-mafraq">
+                                <i class="fa-solid fa-dungeon landmark-bg-icon"></i>
+                            </div>
+                        </div>
+                        <div class="landmark-info">
+                            <h4>أم الجمال النبطية وبوابة البادية</h4>
+                            <p>أحدث مواقع التراث العالمي لليونسكو في الأردن. مدينة الحجر البازلتي النبطية والرومانية الشاهدة على أصالة البادية وكرم أهلها ونقاء سمائها.</p>
+                            <span class="landmark-highlight"><i class="fa-solid fa-star text-gold"></i> تجارب حكاية الشمال: سياحة النجوم والتراث النبطي والبدوي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- President Message Section -->
+        <section class="section president-section" id="president">
+            <div class="container">
+                <div class="president-card">
+                    <div class="president-watermark" aria-hidden="true"></div>
+                    <div class="president-content">
+                        <div class="president-header">
+                            <div class="president-avatar-box">
+                                <div class="avatar-ring">
+                                    <i class="fa-solid fa-user-tie president-icon"></i>
+                                </div>
+                            </div>
+                            <div class="president-meta">
+                                <span class="president-title-badge">كلمة رئيس المبادرة</span>
+                                <h3 class="president-name">عامر الخوالدة</h3>
+                                <p class="president-role">رئيس مبادرة حكاية الشمال</p>
+                            </div>
+                        </div>
+
+                        <div class="president-body">
+                            <i class="fa-solid fa-quote-right quote-mark"></i>
+                            <p class="speech-p">
+                                «أهلاً بكم في <strong>حكاية الشمال</strong>. انطلقنا من يقين راسخ بأن أرض الشمال الأردني ليست مجرد معالم جغرافية وتاريخية، بل هي ذاكرة وهوية وقصص مجد حية تنبض في كل حجر وشجرة وقرية.
+                            </p>
+                            <p class="speech-p">
+                                نضع نصب أعيننا رؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني حفظه الله، ونؤمن بأن الشباب هم القوة الدافعة الحقيقية للتغيير الإيجابي. رسالتنا اليوم هي أن نكون صوتاً للشمال، وسفراء لجماله، وصنّاعاً لتجارب سياحية ملهمة تجمع بين تراثنا العريق وطموح شبابنا الواعد.
+                            </p>
+                            <p class="speech-p highlight-gold">
+                                "حكاية الشمال... حكايتنا، وهويتنا، ومستقبلنا... وبكم ومعكم نستمر ونبني الأثر."»
+                            </p>
+                        </div>
+
+                        <div class="president-footer">
+                            <div class="signature-tag">
+                                <span class="sig-title">مع تحيات</span>
+                                <span class="sig-name">عامر الخوالدة</span>
+                            </div>
+                            <a href="#youth-role" class="btn btn-gold btn-sm"><i class="fa-solid fa-arrow-left"></i> تعرف على دور الشباب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Youth Role & Community Impact Section (الشرح التفصيلي للعمل والتمكين الشبابي) -->
+        <section class="section youth-role-section" id="youth-role">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">شراكة وتمكين</span>
+                    <h2 class="section-title">دور الشباب وصناعة الأثر في الشمال</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-lead">
+                        تضع مبادرة «حكاية الشمال» الشباب في صلب اهتمامها، ليس فقط كمشاركين، بل كقادة وصنّاع للتغيير الإيجابي ومحرك أساسي لتطوير السياحة المجتمعية وخدمة الوطن.
+                    </p>
+                </div>
+
+                <!-- Explanation Cards Grid -->
+                <div class="youth-explain-grid">
+                    <!-- Area 1 -->
+                    <div class="explain-card">
+                        <div class="explain-card-icon">
+                            <i class="fa-solid fa-person-walking-luggage"></i>
+                        </div>
+                        <h3>الإرشاد السياحي والسرد القصصي</h3>
+                        <p>
+                            إعطاء الشباب فرصة حقيقية ليكونوا رواة لتاريخ قراهم ومعالمهم، واستقبال الزوار بضيافة أهل الشمال الأصيلة، وسرد القصص التاريخية والتراثية التي تجعل من كل زيارة تجربة لا تُنسى.
+                        </p>
+                        <div class="explain-card-tag">
+                            <i class="fa-solid fa-check text-gold"></i> بناء جيل من السفراء السياحيين
+                        </div>
+                    </div>
+
+                    <!-- Area 2 -->
+                    <div class="explain-card">
+                        <div class="explain-card-icon">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3>التوثيق الرقمي وصناعة المحتوى</h3>
+                        <p>
+                            توظيف طاقات وإبداعات الشباب في التصوير الفوتوغرافي، الفيديو، وكتابة المحتوى الثقافي، لإبراز الكنوز المخفية في شمال الأردن وتقديمها للعالم بصورة بصرية مشرقة ومواكبة للعصر.
+                        </p>
+                        <div class="explain-card-tag">
+                            <i class="fa-solid fa-check text-gold"></i> ترويج عصري للهوية والتراث
+                        </div>
+                    </div>
+
+                    <!-- Area 3 -->
+                    <div class="explain-card">
+                        <div class="explain-card-icon">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h3>المسارات البيئية وسياحة المغامرة</h3>
+                        <p>
+                            مشاركة الشباب في تخطيط وتنظيم مسارات المشي الجبلي (الهايكنج) والاستكشاف البيئي بين غابات عجلون وسهول إربد وبادية المفرق، مع الحفاظ على البيئة الطبيعية واستدامتها.
+                        </p>
+                        <div class="explain-card-tag">
+                            <i class="fa-solid fa-check text-gold"></i> سياحة مستدامة ومحافظة على الطبيعة
+                        </div>
+                    </div>
+
+                    <!-- Area 4 -->
+                    <div class="explain-card">
+                        <div class="explain-card-icon">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h3>دعم الاقتصاد المحلي والمنتج الريفي</h3>
+                        <p>
+                            الربط بين السياحة والمجتمع المحلي عبر دعم الجمعيات الريفية، المطابخ الإنتاجية، وأصحاب الحرف اليدوية في المحافظات الشمالية، لضمان أن يعود الأثر السياحي بالنفع المباشر على الأسر.
+                        </p>
+                        <div class="explain-card-tag">
+                            <i class="fa-solid fa-check text-gold"></i> تمكين مجتمعي وتنمية محلية
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Methodology / Royal Alignment Box -->
+                <div class="empowerment-manifesto">
+                    <div class="manifesto-content">
+                        <div class="manifesto-badge">
+                            <i class="fa-solid fa-award text-gold"></i>
+                            <span>منهجيتنا في العمل الميداني</span>
+                        </div>
+                        <h3>كيف تترجم المبادرة رؤية سمو ولي العهد؟</h3>
+                        <p>
+                            نؤمن في «حكاية الشمال» بأن الشباب الأردني يمتلك وعياً وانتماءً وطاقات لا محدودة. عملنا لا يقوم على الروتين أو الشعارات، بل ينزل إلى الميدان بروح الفريق الواحد؛ نلتقي بالشباب في محافظاتهم، ونفتح أمامهم المساحات لقيادة المبادرات، وتصميم التجارب السياحية، والتفاعل مع مجتمعاتهم المحلية، بما يجعل كل شاب شريكاً فاعلاً في رسم المستقبل التنموي لشمال المملكة.
+                        </p>
+                        <div class="manifesto-quote">
+                            «معاً .. نُحيي روح الشمال، ونبني مستقبلاً سياحياً يليق بأصالة الأردن وعزيمة شبابه.»
+                        </div>
+                    </div>
+                    <div class="manifesto-visual">
+                        <div class="watermark-symbol">
+                            <img src="54049.jpg" alt="رمزية الهوية الشمالية">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="54049.jpg" alt="شعار مبادرة حكاية الشمال">
+                        <div class="footer-brand-title">
+                            <h3>حكاية الشمال</h3>
+                            <span>حكايتنا، وهويتنا، ومستقبلنا</span>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        مبادرة شبابية سياحية تُبرز جمال وتراث شمال الأردن، برؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني، وبقيادة عامر الخوالدة وسواعد شباب الوطن.
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">روابط سريعة</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#hero"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-angle-left"></i> عن المبادرة</a></li>
+                        <li><a href="#crown-prince"><i class="fa-solid fa-angle-left"></i> رؤية ولي العهد</a></li>
+                        <li><a href="#pillars"><i class="fa-solid fa-angle-left"></i> ركائز المبادرة</a></li>
+                        <li><a href="#landmarks"><i class="fa-solid fa-angle-left"></i> معالم الشمال</a></li>
+                        <li><a href="#president"><i class="fa-solid fa-angle-left"></i> كلمة الرئيس</a></li>
+                        <li><a href="#youth-role"><i class="fa-solid fa-angle-left"></i> العمل الشبابي والأثر</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">محافظات الشمال</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#landmarks"><i class="fa-solid fa-location-dot text-gold"></i> محافظة إربد</a></li>
+                        <li><a href="#landmarks"><i class="fa-solid fa-location-dot text-gold"></i> محافظة عجلون</a></li>
+                        <li><a href="#landmarks"><i class="fa-solid fa-location-dot text-gold"></i> محافظة جرش</a></li>
+                        <li><a href="#landmarks"><i class="fa-solid fa-location-dot text-gold"></i> محافظة المفرق</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4 class="footer-col-title">التواصل والمتابعة</h4>
+                    <p class="contact-desc">مستعدون لاستقبال اقتراحاتكم، مبادراتكم، والتعاون المثمر:</p>
+                    <div class="footer-president-sign">
+                        <strong>رئيس المبادرة:</strong> عامر الخوالدة
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" title="فيسبوك" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" title="إنستغرام" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" title="إكس (تويتر)" aria-label="إكس"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-btn" title="لينكد إن" aria-label="لينكد إن"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn" title="واتساب" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© جميع الحقوق محفوظة لمبادرة <strong>حكاية الشمال</strong> | المملكة الأردنية الهاشمية</p>
+                <p class="sub-footer-text">نروي لكم حكاية... ونصنع معاً تجربة لا تُنسى</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Poster Modal (Lightbox) -->
+    <div class="poster-modal" id="posterModal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" id="modalClose" aria-label="إغلاق">&times;</button>
+            <div class="modal-content">
+                <img src="54049.jpg" alt="شعار وبوستر مبادرة حكاية الشمال الرسمي" class="modal-img">
+                <div class="modal-caption">
+                    <h3>شعار وبوستر مبادرة حكاية الشمال الرسمي</h3>
+                    <p>برؤية سمو ولي العهد الأمير الحسين بن عبدالله الثاني | عامر الخوالدة - رئيس المبادرة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" title="العودة لأعلى" aria-label="العودة لأعلى">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
